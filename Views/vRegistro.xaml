@@ -3,10 +3,22 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="jjadanExamen.Views.vRegistro">
+    
+      
+    <ContentPage.Resources>
+        <Style  x:Key="stylelabel" TargetType="Label">
+            <Setter Property="FontSize" Value="16" />
+            <Setter Property="TextColor" Value="Blue" />
+            <Setter Property="VerticalTextAlignment" Value="Center" />
+        </Style>
+        
+    </ContentPage.Resources>
     <ContentPage.Content>
         <VerticalStackLayout Padding="20" Spacing="10">
-            <Label x:Name="lblUsuario" />
+            <Label x:Name="lblUsuario"
+                   Style="{StaticResource stylelabel}" />
             <Label Text="Registro"
+                   Style="{StaticResource stylelabel}"
                    HorizontalOptions="Center" />
 
                 <Grid>        
@@ -22,14 +34,17 @@
 
                     <Label 
                         Text="Nombre" 
+                        Style="{StaticResource stylelabel}"
                         Grid.Row="0" 
                         Grid.Column="0" />
                     <Label 
                         Text="Apellido" 
+                        Style="{StaticResource stylelabel}"
                         Grid.Row="0" 
                         Grid.Column="1" />
                     <Label 
                         Text="Edad" 
+                        Style="{StaticResource stylelabel}"
                         Grid.Row="0" 
                         Grid.Column="2" />
 
@@ -64,6 +79,7 @@
 
                     <Label 
                         Text="Fecha de inicio" 
+                        Style="{StaticResource stylelabel}"
                         Grid.Row="0" 
                         Grid.Column="0" 
                         VerticalOptions="Center" />
@@ -72,6 +88,7 @@
 
                     <Label 
                         Text="Plan" 
+                        Style="{StaticResource stylelabel}"
                         Grid.Row="1" 
                         Grid.Column="0" 
                         VerticalOptions="Center" />
@@ -89,13 +106,17 @@
                     </Picker>
                     
 
-                    <Label Text="Casillero" Grid.Row="2" Grid.Column="0" VerticalOptions="Center" />
+                    <Label Text="Casillero"
+                           Style="{StaticResource stylelabel}"
+                           Grid.Row="2" Grid.Column="0" VerticalOptions="Center" />
                     <Switch x:Name="swCasillero"
                             IsToggled="False"
                             Grid.Row="2" Grid.Column="1"
                             HorizontalOptions="Start" />
 
-                    <Label Text="Monto inicial" Grid.Row="3" Grid.Column="0" VerticalOptions="Center" />
+                    <Label Text="Monto inicial"
+                           Style="{StaticResource stylelabel}"
+                           Grid.Row="3" Grid.Column="0" VerticalOptions="Center" />
                     <Entry x:Name="txtMontoInicial"
                            Placeholder="Entre 120 y 600"
                            Keyboard="Numeric"

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("jjadanExamen")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+9558a428ae7f196e52cd03179763aeaf022be6ef")]
 [assembly: System.Reflection.AssemblyProductAttribute("jjadanExamen")]
 [assembly: System.Reflection.AssemblyTitleAttribute("jjadanExamen")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

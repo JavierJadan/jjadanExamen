@@ -3,11 +3,20 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="jjadanExamen.Views.vResumen">
+    <ContentPage.Resources>
+        <Style x:Key="stylelabel" TargetType="Label">
+            <Setter Property="FontSize" Value="15" />
+            <Setter Property="TextColor" Value="Black" />
+            <Setter Property="VerticalTextAlignment" Value="Center" />
+        </Style>
+    </ContentPage.Resources>
     <ContentPage.Content>
         <ScrollView>
             <VerticalStackLayout Padding="20" Spacing="10">
-                <Label x:Name="lblUsuarioConectado" />
+                <Label x:Name="lblUsuarioConectado"
+                       Style="{StaticResource stylelabel}" />
                 <Label Text="Resumen"
+                       Style="{StaticResource stylelabel}"
                        HorizontalOptions="Center" />
 
                 <Grid>
@@ -28,57 +37,75 @@
                     </Grid.ColumnDefinitions>
 
                     <Label Text="Nombre" 
+                           Style="{StaticResource stylelabel}"
                            Grid.Row="0" 
                            Grid.Column="0" />
                     <Label x:Name="lblNombre" 
+                           Style="{StaticResource stylelabel}"
                            Grid.Row="0" 
                            Grid.Column="1" />
                     <Label Text="Apellido" 
+                           Style="{StaticResource stylelabel}"
                            Grid.Row="1" 
                            Grid.Column="0" />
                     <Label x:Name="lblApellido" 
+                           Style="{StaticResource stylelabel}"
                            Grid.Row="1" 
                            Grid.Column="1" />
                     <Label Text="Edad" 
+                           Style="{StaticResource stylelabel}"
                            Grid.Row="2" 
                            Grid.Column="0" />
                     <Label x:Name="lblEdad" 
+                           Style="{StaticResource stylelabel}"
                            Grid.Row="2" 
                            Grid.Column="1" />
                     <Label Text="Fecha de inicio" 
+                           Style="{StaticResource stylelabel}"
                            Grid.Row="3" 
                            Grid.Column="0" />
                     <Label x:Name="lblFechaInicio" 
+                           Style="{StaticResource stylelabel}"
                            Grid.Row="3" 
                            Grid.Column="1" />
                     <Label Text="Plan" 
+                           Style="{StaticResource stylelabel}"
                            Grid.Row="4" 
                            Grid.Column="0" />
                     <Label x:Name="lblPlan" 
+                           Style="{StaticResource stylelabel}"
                            Grid.Row="4" 
                            Grid.Column="1" />
                     <Label Text="Casillero" 
+                           Style="{StaticResource stylelabel}"
                            Grid.Row="5" 
                            Grid.Column="0" />
                     <Label x:Name="lblCasillero" 
+                           Style="{StaticResource stylelabel}"
                            Grid.Row="5" 
                            Grid.Column="1" />
                     <Label Text="Monto inicial" 
+                           Style="{StaticResource stylelabel}"
                            Grid.Row="6" 
                            Grid.Column="0" />
                     <Label x:Name="lblMontoInicial" 
+                           Style="{StaticResource stylelabel}"
                            Grid.Row="6" 
                            Grid.Column="1" />
                     <Label Text="Pago mensual" 
+                           Style="{StaticResource stylelabel}"
                            Grid.Row="7" 
                            Grid.Column="0" />
                     <Label x:Name="lblPagoMensual" 
+                           Style="{StaticResource stylelabel}"
                            Grid.Row="7" 
                            Grid.Column="1" />
                     <Label Text="Pago total" 
+                           Style="{StaticResource stylelabel}"
                            Grid.Row="8" 
                            Grid.Column="0" />
                     <Label x:Name="lblPagoTotal" 
+                           Style="{StaticResource stylelabel}"
                            Grid.Row="8" 
                            Grid.Column="1" />
                 </Grid>
