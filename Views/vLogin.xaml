@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="jjadanExamen.Views.vLogin">
+    <ContentPage.Content>
+        <VerticalStackLayout
+            Spacing="10"
+            Padding="20">
+            <Image
+                Source="login.png"
+                ></Image>
+            <Label
+                Text="Iniciar Sesion"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                ></Label>
+            
+             <Grid>
+                 <Grid.RowDefinitions>
+                     <RowDefinition></RowDefinition>
+                     <RowDefinition></RowDefinition>
+                     <RowDefinition></RowDefinition>
+                 </Grid.RowDefinitions>
+                 <Grid.ColumnDefinitions>
+                     <ColumnDefinition></ColumnDefinition>
+                     <ColumnDefinition></ColumnDefinition>
+                 </Grid.ColumnDefinitions>
+                 
+                 <Label
+                     Text="Usuario"
+                     Grid.Row="0"
+                     Grid.Column="0"
+                 >
+                 </Label>
+                 <Entry
+                     x:Name="txtUsuario"
+                     Keyboard="Plain"
+                     Placeholder="Ingresa el usuario"
+                     Grid.Row="0"
+                     Grid.Column="1"
+                 ></Entry>
+            
+                 <Label
+                     Text="Contraseña"
+                     Grid.Row="1"
+                     Grid.Column="0"
+                 >
+                 </Label>
+                 <Entry
+                     x:Name="txtContrasena"
+                     Placeholder="Ingresa la contraseña"
+                     IsPassword="true"
+                     Grid.Row="1"
+                     Grid.Column="1"
+                 ></Entry>
+                 
+                 <Button
+                     x:Name="btniniciar"
+                     Text="Iniciar sesión"
+                     Clicked="Btniniciar_OnClicked"
+                     Grid.Row="2"
+                     Grid.Column="0"
+                 ></Button>
+                 
+                 <Button
+                     x:Name="btnacerca"
+                     Text="Acerca de"
+                     Clicked="Btnacerca_OnClicked"
+                     Grid.Row="2"
+                     Grid.Column="1"
+                 ></Button>
+
+
+             </Grid>
+            
+        </VerticalStackLayout>
+    </ContentPage.Content>
+</ContentPage>
